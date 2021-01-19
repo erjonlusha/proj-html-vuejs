@@ -12,39 +12,82 @@
     <div id="app">
         <!-- Crea struttura -->
         <header>
-            <nav>
-                <!-- Barra navigazione con 3 div rispettivamente .logo+.menu+.options -->
+            <nav class="h_80 bg_blue_port_gore container">
+                <div class="container vw80">
+                    <!-- Barra navigazione con 3 div rispettivamente .logo+.menu+.options -->
+                    <div class="logo h_27 red"></div>
+                    <div class="menu h_27 yellow"></div>
+                    <div class="options h_27 pink"></div>
+                </div>
             </nav>
-            <div class="hero_container">
-                <!-- Sfondo hero su più livelli di cui 3onde z-negativo con 2 div rispettivamente .hero_text+.hero_image -->
+            <div class=" bg_blue_port_gore container">
+                <div class="container hero  vw80 f_column">
+                    <!-- Sfondo hero su più livelli di cui 3onde z-negativo con 2 div rispettivamente .hero_text+.hero_image -->
+                    <div class="hero_text container green h_30"></div>
+                    <div class="hero_image container purple h_50">
+                        <!-- 3div rispettivamente .hero_left+.hero_center+.hero_right -->
+                    </div>
+                </div>
             </div>
+            <!-- Barra col bianco tramite gradient -->
         </header>
         <main>
-            <div class="container white">
-                <!-- 3div rispettivamente .white.text+.values+.clients.services -->
-                <!-- dopo il secondo div inserisci il bottone che dovrà portare allinizio della pagina -->
+            <div class="container bg_white">
+                <div class="container vw80 f_column">
+                    <!-- 3div rispettivamente .bg_white.text+.values+.clients.services -->
+                            <!-- dopo il secondo div inserisci il bottone che dovrà portare allinizio della pagina --> 
+                    <div class="bg_white text h_30 pink"></div>
+                    <div class="values h_30 purple"></div>
+                    <div class="clients services h_50 blue"></div>               
+                </div>
             </div>
             <div class="container gray">
-                <!-- 2div rispettivamente .courses_text+.courses_list (forse il button potrebbe andare fuori) -->
+                <div class="container vw80 f_column">
+                    <!-- 2div rispettivamente .courses_text+.courses_list (forse il button potrebbe andare fuori) -->
+                    <div class="courses_text h_30 yellow"></div>
+                    <div class="courses_list h_50 orange"></div>
+                    <div class="button h_30 red"></div>
+                </div>
             </div>
-            <div class="container white">
-                <!-- 3div rispettivamente .about+.about_text+.logos -->
+            <div class="container bg_white">
+                <div class="container vw80 f_column">
+                    <!-- 3div rispettivamente .about+.about_text+.logos -->
+                    <div class="about h_30 yellow"></div>
+                    <div class="about_text h_50 purple"></div>
+                    <div class="logos h_30 pink"></div>
+                </div>
             </div>
             <div class="container gray">
-                <!-- 3div di cui i primi 2 simili .our_blogs+.learn+.started_now -->
+                <div class="container vw80 f_column">
+                    <!-- 3div di cui i primi 2 simili .our_blogs+.learn+.started_now -->
+                    <div class="our_blogs h_30 yellow"></div>
+                    <div class="learn h_50 blue"></div>
+                    <div class="started_now h_30 green"></div>
+                </div>
+            </div>
+            <div class="container bg_white">
+                <div class="container vw80 f_column">
+                    <!-- 3div rispettivamente .learn+.learn_img+.button -->
+                    <div class="learn h_30 yellow"></div>
+                    <div class="learn_img h_50 purple"></div>
+                    <div class="button h_30 pink"></div>
+                </div>
             </div>
         </main>
-        <footer>
-            <div class="f_top">
-                <!-- 2div rispettivamente .f_left+.f_right -->
-            </div>
-            <div class="f_bottom">
-                <!-- .copyright -->
+        <footer class="container gray">
+            <div class="container vw80 f_column">
+                <div class=" f_top container vw80 f_column">
+                    <!-- 2div rispettivamente .f_left+.f_right -->
+                    <div class="f_left h_50 orange"></div>
+                    <div class="f_right h_50 red"></div>
+                </div>
+                <div class="container f_bottom vw80">
+                    <!-- .copyright -->
+                </div>
             </div>
         </footer>
-    </div>
-    <!-- Js & Vue & Axios-->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </div>    
+    <!-- Js & Vue-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

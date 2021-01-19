@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Utlity */
+
+    /* Colori */
+        /* color cube */
+        .white{color: white;} .bg_white{color: white;}
+        .port_gore{color: #1f2154;} .bg_blue_port_gore{background-color: #1f2154;}
+    /* Dimenzioni */
+        .vh_65{height: 65vh;}
+        .h_80{height: 80px;}
+        
+    /* Margin */
+    /* Padding */
+/* Header */
+#app{width: 100%;}
+/* Main */
+.vw80{width: 80vw;}
+.f_column{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+
+/* DEBUG */
+.h_27{  
+    height: 80px;
+    width: 100%;
+}
+    
+    .gray{background-color: gray;}
+    
+    .red{background-color: red;}
+    .blue{background-color: blue;}
+    .yellow{background-color: yellow;}
+    .green{background-color: green;}
+    .orange{background-color: orange;}
+    .purple{background-color: purple;}
+    .pink{background-color: pink;}
+    
+    
+    .h_30{height: 40px;
+    width: 100%;}
+    .h_50{height: 60px;
+    width: 100%;
+}
+    .container{
+        display: flex;    
+        justify-content: center;
+    }
