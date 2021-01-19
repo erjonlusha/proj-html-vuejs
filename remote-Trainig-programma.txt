@@ -1,0 +1,27 @@
+-Crea struttura web(12 Bool) usando flexbox o bootstrap (da RAGIONARCI SU) prima maxi aree 
+	-livello massimo card non scendere oltre ATRIMENTI PERDI TROPPO TEMPO
+	-Cerca come fare le bolle ATTENZIONE AL TEMPO, MAX 20 MIN
+-Buttare giù un pensiero rapidissimo a quelli che potrebbero essere i data
+-Ricreare fedelmente nav bar con VueJs(attenzione capire dove rimandare con il button(window.scrollTo(500,0))
+	-search bar in sospeso @@@
+-Hero image
+-Completato header ora tocca al footer 
+-Completa 3 section della pagina senza troppi margin e padding (fermati alla section grigia con i corsi)
+-Adesso se hai capito come fare le CAZZO di bolle, falle in 20/30 minuti al massimo, Attenzione al z-index di ognuna 
+-Ora che sei soddisfatto vai avanti, concludi il layout base della pagina, creando delle liste per i corsi, e tutto quello che si potrebbe inserire in un database.
+-Mena con ste animazioni e hover, non fare tutto solo in css, ma tranquillo fai quello che puoi il prima possibile che quando finiamo ci ritorniamo @@;
+-Se la pagina è gia pronta cominciamo a provare a ruota, @@@ e @@, search bar dovrebbe ricercare qualsiasi cosa ci sia dentro il db, altrimenti pagina in bianco. (potrebbe essere inserito o tutto in una variabile oppure un div che sparisce nel nulla lasciando solo il footer)
+
+SOLO E SOLTANTO SE SI E' FINITO TUTTO
+-Abbiamo 3 button: Get started FREE, View all courses, get started NOW; e faranno rispettivamente 
+	Free: ti porta alla sezione corsi, e ti mostra i corsi (o ordinati oppure solo free)
+	View all curses: Svuota la pagina, e mostra tutto ul li{curses}
+	Now: come free (ma ordinati per numero di studenti)
+-Cerca di modificare le bolle con un setInterval nel cambio colore e\o dimenzione
+
+Conclusioni Finali
+-Attieniti al programma il più possibile
+-Non perdere tempo 
+-Rilassati che ti divertirai
+-Ascolta tanta musica 
+-Se non sai qualcosa hai sempre google a tua disposizione 
