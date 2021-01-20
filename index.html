@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaxCoach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,33 +13,36 @@
     <div id="app">
         <!-- Crea struttura -->
         <header>
-            <nav class="bg_blue_port_gore container">
+            <nav class="bg_blue_port_gore container p_10">
                 <div class="d_flex vw80">
                     <!-- Barra navigazione con 3 div rispettivamente .logo+.menu+.options -->
                     <div class="logo"><img :src="logo" alt=""></div>
-                    <div class="d_flex">
-                        <div v-for="item in menu" class="menu tx_capitalize">{{item}}<i class="fas fa-chevron-down"></i></div>
+                    <div class="d_flex m_left100">
+                        <div v-for="item in menu" class="menu white tx_capitalize m_left50">{{item}}<i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="options d_flex">
-                        <i class="fas fa-cart-plus"></i>
-                        <i class="fas fa-user-circle"></i>
-                        <div class="search">
+                        <i class="fas fa-cart-plus p_5"></i>
+                        <i class="fas fa-user-circle p_5"></i>
+                        <div class="search bg_white">
                             <input v-model="search" type="text" placeholder="Cerca">
-                            <button class="search_button"><i class="fa fa-search"></i></button>
+                            <button class="search_button bg_white"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div class=" bg_blue_port_gore container">
-                <div class="container hero  vw80 f_column">
+            <div class=" bg_blue_port_gore_gr container over_hidden">
+                <div class="container hero white f_column">
                     <!-- Sfondo hero su più livelli di cui 3onde z-negativo con 2 div rispettivamente .hero_text+.hero_image -->
-                    <div class="hero_text container green h_30">
-                        <strong>Learn at your own pace!</strong>
-                        <h4>Get teamed uo with people of the same will</h4>
-                        <button>Get started for free</button>
+                    <div class="hero_text container f_column p_20">
+                        <span class="p_20"><h1>Learn at your own pace!</h1></span>
+                        <span class="p_20">Get teamed up with people of the same will</span>
+                        <span><button class="white bg_jungle_green btn p_10">Get started for free</button></span>                      
                     </div>
-                    <div class="hero_image container purple h_50">
+                    <div class="hero_image container">
                         <!-- 3div rispettivamente .hero_left+.hero_center+.hero_right -->
+                        <div class="hero_left"><img :src="heroLeft" alt=""></div>
+                        <div class="hero_center"><img :src="screenShot" alt=""></div>
+                        <div class="hero_right"><img :src="heroRight" alt=""></div>
                     </div>
                 </div>
             </div>
