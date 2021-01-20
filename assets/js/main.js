@@ -3,7 +3,10 @@
 
 let app = new Vue ({
 	el: "#app",
-    data : {},
+    data : {
+        menu:['home', 'pages', 'courses', 'features', 'blog', 'shop'],
+        logo:'assets/img/light-logo.png'
+    },
     mounted () {},
     methods:{}
 

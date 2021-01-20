@@ -12,18 +12,31 @@
     <div id="app">
         <!-- Crea struttura -->
         <header>
-            <nav class="h_80 bg_blue_port_gore container">
-                <div class="container vw80">
+            <nav class="bg_blue_port_gore container">
+                <div class="d_flex vw80">
                     <!-- Barra navigazione con 3 div rispettivamente .logo+.menu+.options -->
-                    <div class="logo h_27 red"></div>
-                    <div class="menu h_27 yellow"></div>
-                    <div class="options h_27 pink"></div>
+                    <div class="logo"><img :src="logo" alt=""></div>
+                    <div class="d_flex">
+                        <div v-for="item in menu" class="menu tx_capitalize">{{item}}<i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="options d_flex">
+                        <i class="fas fa-cart-plus"></i>
+                        <i class="fas fa-user-circle"></i>
+                        <div class="search">
+                            <input v-model="search" type="text" placeholder="Cerca">
+                            <button class="search_button"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class=" bg_blue_port_gore container">
                 <div class="container hero  vw80 f_column">
                     <!-- Sfondo hero su più livelli di cui 3onde z-negativo con 2 div rispettivamente .hero_text+.hero_image -->
-                    <div class="hero_text container green h_30"></div>
+                    <div class="hero_text container green h_30">
+                        <strong>Learn at your own pace!</strong>
+                        <h4>Get teamed uo with people of the same will</h4>
+                        <button>Get started for free</button>
+                    </div>
                     <div class="hero_image container purple h_50">
                         <!-- 3div rispettivamente .hero_left+.hero_center+.hero_right -->
                     </div>

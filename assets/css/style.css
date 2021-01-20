@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 /* Utlity */
-
+.tx_capitalize{text-transform:capitalize;}
     /* Colori */
         /* color cube */
         .white{color: white;} .bg_white{color: white;}
@@ -15,8 +15,41 @@
         
     /* Margin */
     /* Padding */
-/* Header */
 #app{width: 100%;}
+/* Header */
+/* .logo{width: 250px;} */
+.logo>img{width: 125px;}
+.menu{
+    padding-left: 10px;
+    color: white;
+}
+.option{
+    width: 100%;
+}
+.options>i.fas {
+    color: white;
+}
+.search{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+.search>input, .search_button {
+    background-color: white;
+}
+.search>input{
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100px;
+}
+.search_button {
+    color: #27ab94;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+input:focus, button:focus {outline: none;}
+.search>input, button{border: none;}
 /* Main */
 .vw80{width: 80vw;}
 .f_column{
@@ -48,7 +81,10 @@
     .h_50{height: 60px;
     width: 100%;
 }
-    .container{
+.d_flex{
+    display: flex;
+    justify-content: space-between;}
+.container{
         display: flex;    
         justify-content: center;
     }
