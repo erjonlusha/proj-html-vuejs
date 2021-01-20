@@ -3,12 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
+    
 }
 /* Utlity */
 .tx_capitalize{text-transform:capitalize;}
+.tx_uppercase{text-transform:uppercase;}
+.tx_center, .values>div{text-align: center;}
+
+.copyright, .fontS_14{font-size: 14px;}
+.f_fab, .fontS_30{font-size: 30px;}
+.fontS_50{font-size: 50px;}
+
 .over_hidden{overflow: hidden;}
 .vw80{width: 60vw;}
+.w100{width: 100%;}
 .f_column{
     flex-direction: column;
     align-items: center;
@@ -34,8 +42,7 @@
         .p_5{padding: 5px;}
         .p_10{padding: 10px;}
         .p_20{padding: 20px;}
-
-#app{width: 100%;}
+        .p_50tb{padding: 50px 0;}
 /* Header */
 .bg_blue_port_gore_gr{
     background: linear-gradient(to bottom, #1f2154, #1f2154 50%, #1f2154 85%, #ffffff 25%);}
@@ -44,7 +51,6 @@
     font-size: 10px;
     padding: 0 3px;
 }
-.option{width: 100%;}
 .fa-user-circle{padding: 7px 15px;}
 div.search{
     padding: 2px 5px;
@@ -105,19 +111,37 @@ input:focus, button:focus {outline: none;}
 /* /Hero */
 
 /* Main */
-/* Footer */
-footer{padding: 40px 0;}
-    .f_top{
-        width: 100%;
-        padding: 40px 0;
+    .phrase_text{padding: 80px 0;}
+    .frase{
+        font-size: 25px;
+        padding: 0px 15%;
+        line-height: 4rem;
     }
+    .who_is{text-decoration: wavy;}
+    .values{
+        justify-content: space-around;
+        width: 100%;
+    }
+    .valore{
+        font-size: 40px;
+        font-weight: 600;
+        
+    }
+    .values>div{padding-bottom: 80px;}
+    .values>div>span{font-weight: 600;}
+    .courses_text{padding-bottom: 50px;}
+    .card>img{
+        width: 10px;
+    }
+/* Footer */
+    footer{padding: 40px 0;}
+    .f_top{width: 100%;}
     .f_top ul>li{
         font-size: 13px;
         list-style: none;
         line-height: 1.8rem;
     }
     .f_left{ width: 40%;}
-    .f_fab{font-size: 30px;}
     .f_right{
         width: 60%;
         justify-content: space-around;
@@ -129,9 +153,6 @@ footer{padding: 40px 0;}
     }
     .social_li>i{
         margin-top: 1.8rem;
-    }
-    .copyright{
-        font-size: 14px;
     }
 /* DEBUG */
 .h_27{  

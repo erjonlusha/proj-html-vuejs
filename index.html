@@ -57,16 +57,50 @@
                 <div class="container vw80 f_column">
                     <!-- 3div rispettivamente .bg_white.text+.values+.clients.services -->
                             <!-- dopo il secondo div inserisci il bottone che dovrà portare allinizio della pagina --> 
-                    <div class="bg_white text h_30 pink"></div>
-                    <div class="values h_30 purple"></div>
-                    <div class="clients services h_50 blue"></div>               
+                    <div v-for="frasi in phrasesOfDay" class="bg_white phrase_text tx_center">
+                        <div class="frase"><h2>{{frasi.phrase}}</h2></div>
+                        <div class="p_10 tx_uppercase"><strong>{{frasi.whoSay}}</strong></div>
+                        <div class="gray_chateau who_is"><small>{{frasi.whoIS}}</small></div>
+                    </div>
+                    <div v-for="value in statistics" class="values d_flex">
+                        <div class="d-flex">
+                            <span class="valore jungle_green">{{value.finished}}</span><br>
+                            <span class="tx_uppercase">Finished session</span>
+                        </div>
+                        <div>
+                            <span class="valore jungle_green">{{value.enrolled}}</span><br>
+                            <span class="tx_uppercase">Enrolled learners</span>
+                        </div>
+                        <div>
+                            <span class="valore jungle_green">{{value.istructors}}</span><br>
+                            <span class="tx_uppercase">Online instructor</span>
+                        </div>
+                        <div>
+                            <span class="valore jungle_green">{{value.satisfactionRate}} + </span><br>
+                            <span class="tx_uppercase">Satisfaction rate</span>
+                        </div>
+                    </div>
+                    <div class="clients services h_50 blue">
+
+                    </div>               
                 </div>
             </div>
-            <div class="container gray">
+            <div class="container gray p_50tb">
                 <div class="container vw80 f_column">
                     <!-- 2div rispettivamente .courses_text+.courses_list (forse il button potrebbe andare fuori) -->
-                    <div class="courses_text h_30 yellow"></div>
-                    <div class="courses_list h_50 orange"></div>
+                    <div class="courses_text w100 d_flex f_column">
+                        <div class="tx_uppercase fontS_14">Choose a curse to get started</div>
+                        <div class="fontS_50"><strong>Latest Featured </strong><span class="jungle_green">Courses</span></div>
+                    </div>
+                    <div class="courses_list  orange">
+                        <div v-for="course in courses" class="card">
+                            <img :src="course.preview" alt="">
+                            {{course.price}}
+                            {{course.description}}
+                            {{course.n0fLessons}}
+                            {{course.students}}
+                        </div>
+                    </div>
                     <div class="button h_30 red"></div>
                 </div>
             </div>
@@ -97,7 +131,7 @@
         </main>
         <footer class="container bg_hint_of_red">
             <div class="container vw80 f_column">
-                <div class=" f_top container d_flex ">
+                <div class=" f_top container ">
                     <!-- 2div rispettivamente .f_left+.f_right -->
                     <div class="f_left">
                         <ul>
