@@ -17,15 +17,15 @@
                 <div class="d_flex vw80">
                     <!-- Barra navigazione con 3 div rispettivamente .logo+.menu+.options -->
                     <div class="logo"><img :src="logo" alt=""></div>
-                    <div class="d_flex m_left100">
+                    <div class="d_flex m_left161">
                         <div v-for="item in menu" class="menu white tx_capitalize m_left50">{{item}}<i class="fas fa-chevron-down"></i></div>
                     </div>
                     <div class="options d_flex">
                         <i class="fas fa-cart-plus p_5"></i>
-                        <i class="fas fa-user-circle p_5"></i>
+                        <i class="fas fa-user-circle"></i>
                         <div class="search bg_white">
                             <input v-model="search" type="text" placeholder="Cerca">
-                            <button class="search_button bg_white"><i class="fa fa-search"></i></button>
+                            <button class="search_button bg_white"><i class="fa fa-search jungle_green"></i></button>
                         </div>
                     </div>
                 </div>
@@ -36,12 +36,16 @@
                     <div class="hero_text container f_column p_20">
                         <span class="p_20"><h1>Learn at your own pace!</h1></span>
                         <span class="p_20">Get teamed up with people of the same will</span>
-                        <span><button class="white bg_jungle_green btn p_10">Get started for free</button></span>                      
+                        <span class="p_10"><button class="white bg_jungle_green btn p_10">Get started for free</button></span>                      
                     </div>
                     <div class="hero_image container">
                         <!-- 3div rispettivamente .hero_left+.hero_center+.hero_right -->
                         <div class="hero_left"><img :src="heroLeft" alt=""></div>
-                        <div class="hero_center"><img :src="screenShot" alt=""></div>
+                        <div class="hero_center">
+                            <img :src="screenShot" alt="">
+                            <div class="layover"> <img src="assets/img/icon-youtube-play.png" alt=""></div>
+
+                        </div>
                         <div class="hero_right"><img :src="heroRight" alt=""></div>
                     </div>
                 </div>
@@ -91,15 +95,44 @@
                 </div>
             </div>
         </main>
-        <footer class="container gray">
+        <footer class="container bg_hint_of_red">
             <div class="container vw80 f_column">
-                <div class=" f_top container vw80 f_column">
+                <div class=" f_top container d_flex ">
                     <!-- 2div rispettivamente .f_left+.f_right -->
-                    <div class="f_left h_50 orange"></div>
-                    <div class="f_right h_50 red"></div>
+                    <div class="f_left">
+                        <ul>
+                            <li><strong>Address</strong></li>
+                            <li>{{address}}</li>
+                            <li>{{contactNumber}} ({{openingHours}})</li>
+                            <li>{{emailSupport}}</li>
+                            <li class="social_li d_flex gray_chateau"><i v-for="social in socials" :class="social + ' f_fab'+' p_5'"></i></li>
+                        </ul>
+                    </div>
+                    <div class="f_right d_flex">                        
+                            <ul>
+                                <li><strong>Explore</strong></li>
+                                <li>Start here</li>
+                                <li>Blog</li>
+                                <li>About us</li>
+                            </ul>
+                            <ul>
+                                <li><br></li>
+                                <li>Success story</li>
+                                <li>Courses</li>
+                                <li>Contact us</li>
+                            </ul>
+                            <ul>
+                                <li><strong>Information</strong></li>
+                                <li>Membership</li>
+                                <li>Purchase guide</li>
+                                <li>Privacy policy</li>
+                                <li>Terms of services</li>
+                            </ul>
+                    </div>
                 </div>
-                <div class="container f_bottom vw80">
+                <div class="copyright container f_bottom gray_chateau">
                     <!-- .copyright -->
+                    <h6>&copy;2020 Maxcoach. All Rights Reserved</h6>
                 </div>
             </div>
         </footer>
