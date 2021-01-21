@@ -36,7 +36,7 @@
                     <div class="hero_text container f_column p_20">
                         <span class="p_20"><h1>Learn at your own pace!</h1></span>
                         <span class="p_20">Get teamed up with people of the same will</span>
-                        <span class="p_10"><button class="white bg_jungle_green btn p_10">Get started for free</button></span>                      
+                        <span class="p_10"><button class="white bg_jungle_green btn p_10 button_bg_green"><strong>Get started for free</strong></button></span>                      
                     </div>
                     <div class="hero_image container">
                         <!-- 3div rispettivamente .hero_left+.hero_center+.hero_right -->
@@ -53,11 +53,11 @@
             <!-- Barra col bianco tramite gradient -->
         </header>
         <main>
-            <div class="container bg_white">
+            <div class="bg_pattern container">
                 <div class="container vw80 f_column">
                     <!-- 3div rispettivamente .bg_white.text+.values+.clients.services -->
                             <!-- dopo il secondo div inserisci il bottone che dovrà portare allinizio della pagina --> 
-                    <div v-for="frasi in phrasesOfDay" class="bg_white phrase_text tx_center">
+                    <div v-for="frasi in phrasesOfDay" class="phrase_text tx_center">
                         <div class="frase"><h2>{{frasi.phrase}}</h2></div>
                         <div class="p_10 tx_uppercase"><strong>{{frasi.whoSay}}</strong></div>
                         <div class="gray_chateau who_is"><small>{{frasi.whoIS}}</small></div>
@@ -85,47 +85,92 @@
                     </div>               
                 </div>
             </div>
-            <div class="container gray p_50tb">
+            <div class="container bg_grayf5 p_50tb">
                 <div class="container vw80 f_column">
                     <!-- 2div rispettivamente .courses_text+.courses_list (forse il button potrebbe andare fuori) -->
                     <div class="courses_text w100 d_flex f_column">
                         <div class="tx_uppercase fontS_14">Choose a curse to get started</div>
                         <div class="fontS_50"><strong>Latest Featured </strong><span class="jungle_green">Courses</span></div>
                     </div>
-                    <div class="courses_list  orange">
-                        <div v-for="course in courses" class="card">
-                            <img :src="course.preview" alt="">
-                            {{course.price}}
-                            {{course.description}}
-                            {{course.n0fLessons}}
-                            {{course.students}}
+                    <div class="courses_list w100">
+                        <div v-for="course in courses" class="card p_10">
+                            <div class="course_image" :style="course.preview"></div>
+                            <div class="p_10">
+                                <div class="price jungle_green tx_capitalize"><strong>{{course.price}}</strong></div>
+                                <div class="description tx_capitalize port_gore">{{course.description}}</div>
+                                <div class="w100 d_flex pt_8 gray_chateau">
+                                    <span class="number_lessons w50">
+                                        <small>
+                                            <i class="far fa-file-alt"></i>
+                                        {{course.n0fLessons}} Lessons
+                                        </small>
+                                    </span>
+                                    <span class="students w50">
+                                        <small>
+                                            <i class="far fa-user"></i>
+                                        {{course.students}} Students
+                                        </small>
+
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="button h_30 red"></div>
+                    <div class="button">
+                        <span class="p_10"><button class="white bg_jungle_green btn p_10 button_bg_white"><strong>Get started for free</strong></button></span>
+                    </div>
                 </div>
             </div>
-            <div class="container bg_white">
+            <div class="container w100 p_50tb">
                 <div class="container vw80 f_column">
                     <!-- 3div rispettivamente .about+.about_text+.logos -->
-                    <div class="about h_30 yellow"></div>
-                    <div class="about_text h_50 purple"></div>
-                    <div class="logos h_30 pink"></div>
+                    <div class="about courses_text w100 d_flex f_column">
+                        <div class="fontS_50 tx_capitalize">
+                            <strong>Why people talk about</strong>
+                            <span class="jungle_green">MaxCoach</span>
+                            <strong>?</strong>
+                        </div>
+                    </div>
+                    <div class="about_text purple">
+                        <div v-for="testimonial in testimonials" class="card p_10">
+                            <div><img class="testimonial_image" :src="testimonial.photo" alt=""></div>
+                            <div class="p_10">
+                                <div class="price jungle_green tx_capitalize"><strong>{{testimonial.phrase}}</strong></div>
+                                <div class="description tx_capitalize port_gore">{{testimonial.whoSay}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logos d_flex">
+                        <span v-for="client in clients">
+                            <img :src="client.logo" alt="">
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="container gray">
+            <div class="container bg_hint_of_red p_50tb">
                 <div class="container vw80 f_column">
                     <!-- 3div di cui i primi 2 simili .our_blogs+.learn+.started_now -->
-                    <div class="our_blogs h_30 yellow"></div>
-                    <div class="learn h_50 blue"></div>
-                    <div class="started_now h_30 green"></div>
+                    <div class="our_blogs w100 d_flex f_column">
+                        <div class="tx_uppercase fontS_14">Enjoy reading on MaxCoach</div>
+                        <div class="fontS_50"><strong>Latest on </strong><span class="jungle_green">Our Blogs</span></div>
+                    </div>
                 </div>
             </div>
+
+            <div class="learn h_50 blue"></div>
+            <div class="started_now h_30 green"></div>
+            
             <div class="container bg_white">
                 <div class="container vw80 f_column">
                     <!-- 3div rispettivamente .learn+.learn_img+.button -->
-                    <div class="learn h_30 yellow"></div>
+                    <div class="learn w100 d_flex f_column p_50tb">
+                        <div class="tx_uppercase fontS_14">Wanna transform your life?</div>
+                        <div class="fontS_50"><strong>Glad to </strong><span class="jungle_green">Help You </span><strong>Learn</strong></div>
+                    </div>
                     <div class="learn_img h_50 purple"></div>
-                    <div class="button h_30 pink"></div>
+                    <div class="button">
+                        <span class="p_10"><button class="white bg_jungle_green btn p_10 button_bg_white"><strong>Get started for free</strong></button></span>
+                    </div>
                 </div>
             </div>
         </main>
