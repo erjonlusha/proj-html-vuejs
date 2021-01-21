@@ -11,6 +11,7 @@
 .tx_center, .values>div{text-align: center;}
 
 .copyright, .fontS_14{font-size: 14px;}
+.fontS_20{font-size: 20px;}
 .f_fab, .fontS_30{font-size: 30px;}
 .fontS_50{font-size: 50px;}
 
@@ -53,6 +54,7 @@
         .pt_8{padding-top: 8px;}
         .p_10{padding: 10px;}
         .p_20{padding: 20px;}
+        .pb_25{padding-bottom: 25px;}
         .p_50tb{padding: 50px 0;}
 /* Header */
 .bg_blue_port_gore_gr{
@@ -81,12 +83,8 @@ input:focus, button:focus {outline: none;}
 .search>input, button{border: none;}
 
 /* Hero */
-.hero_text{
-    padding-bottom: 40px;
-}
-.hero_image{
-    margin-bottom: 3%;
-}
+.hero_text{padding-bottom: 40px;}
+.hero_image{margin-bottom: 3%;}
 .hero_left, .hero_right{position: relative;}
 .hero_left>img{
     height: 100%;
