@@ -13,7 +13,7 @@ let app = new Vue ({
         testimonials:[
             {
             photo:'assets/img/testimonial-avata-01.jpg',
-            phrase:"I am free to learn at my own pace, follow mu own schedule and choose th subject I like. Great study portal for people like me",
+            phrase:"I am free to learn at my own pace, follow my own schedule and choose th subject I like. Great study portal for people like me",
             whoSay:"Mina Hollance",
             whoIS:"/Freelancer"
         },
@@ -118,21 +118,21 @@ let app = new Vue ({
         ],
         ourBlogs:[
             {
-                preview:'assets/img/artist-blog-01-480x325.jpg;',
+                preview:'assets/img/artist-blog-01-480x325.jpg',
                 artist:'Artist',
                 articleTitle:'brush strokes energize trees in paintings',
                 date:'May 15, 2020',
                 views:688
             },
             {
-                preview:'assets/img/artist-blog-02-480x325.jpg;',
+                preview:'assets/img/artist-blog-02-480x325.jpg',
                 artist:'Artist',
                 articleTitle:'pocket-sized notebooks hold miniature paintings',
                 date:'May 15, 2020',
                 views:603
             },
             {
-                preview:'assets/img/artist-blog-03-480x325.jpg;',
+                preview:'assets/img/artist-blog-03-480x325.jpeg',
                 artist:'Artist',
                 articleTitle:'connection between self-portraits and identity',
                 date:'May 15, 2020',

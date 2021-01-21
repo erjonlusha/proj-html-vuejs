@@ -13,12 +13,14 @@
 .copyright, .fontS_14{font-size: 14px;}
 .fontS_20{font-size: 20px;}
 .f_fab, .fontS_30{font-size: 30px;}
+.fontS_40{font-size: 40px;}
 .fontS_50{font-size: 50px;}
 
 .over_hidden{overflow: hidden;}
 .vw80{width: 60vw;}
 .w100{width: 100%;}
 .w50{width: 50%;}
+.w30{width: 30%;}
 .f_column{
     flex-direction: column;
     align-items: center;
@@ -142,13 +144,28 @@ input:focus, button:focus {outline: none;}
     }
     .values>div{padding-bottom: 80px;}
     .values>div>span{font-weight: 600;}
-    .courses_text, .our_blogs{padding-bottom: 50px;}
+    .courses_text, .about, .our_blogs{padding-bottom: 50px;}
     .card{
         width: 45%;
         display: inline-flex;
         margin-bottom: 30px;
         margin-right: 5%;
         padding-left: 1%;
+    }
+    .card_hollance{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-right: 5%;
+        padding-left: 1%;
+    }
+    .hol_pad{
+        text-align: justify;
+        padding: 0px 0 10px 80px;
+
+    }
+    .article_image>img {
+        border-radius: 5px;
     }
     .card:hover{
         background-color: #ffffff;
